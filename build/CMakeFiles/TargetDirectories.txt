@@ -1,0 +1,3 @@
+C:/Users/nkspa/Documents/potential-fishstick/build/CMakeFiles/potential-fishstick.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/CMakeFiles/edit_cache.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/CMakeFiles/rebuild_cache.dir
