@@ -76,7 +76,7 @@ build CMakeFiles\potential-fishstick.dir\model\GameModel.cpp.obj: CXX_COMPILER__
 build potential-fishstick.exe: CXX_EXECUTABLE_LINKER__potential-fishstick_Debug CMakeFiles\potential-fishstick.dir\main.cpp.obj CMakeFiles\potential-fishstick.dir\model\GameModel.cpp.obj | lib\glfw-3.3.8\src\glfw3.lib || lib\glfw-3.3.8\src\glfw3.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = lib\glfw-3.3.8\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = opengl32.lib  glu32.lib  lib\glfw-3.3.8\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\potential-fishstick.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

@@ -15,7 +15,7 @@ add_subdirectory( lib/glfw-3.3.8 )
 
 add_executable(potential-fishstick main.cpp model/GameModel.cpp)
 
-target_link_libraries(potential-fishstick glfw )
+target_link_libraries(potential-fishstick ${OPENGL_LIBRARIES} glfw )
 
 add_executable(PFTest test.cpp model/GameModel.cpp)
 

@@ -104,6 +104,16 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "opengl32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "glu32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
 				"fragment" : "lib\\glfw-3.3.8\\src\\glfw3.lib",
 				"role" : "libraries"
 			},
