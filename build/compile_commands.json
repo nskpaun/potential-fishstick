@@ -1,13 +1,13 @@
 [
 {
   "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
-  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Users\\nkspa\\Documents\\potential-fishstick /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\potential-fishstick.dir\\main.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\main.cpp",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Users\\nkspa\\Documents\\potential-fishstick -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\potential-fishstick.dir\\main.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\main.cpp",
   "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\main.cpp",
   "output": "CMakeFiles\\potential-fishstick.dir\\main.cpp.obj"
 },
 {
   "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
-  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Users\\nkspa\\Documents\\potential-fishstick /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\potential-fishstick.dir\\model\\GameModel.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\model\\GameModel.cpp",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Users\\nkspa\\Documents\\potential-fishstick -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\potential-fishstick.dir\\model\\GameModel.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\model\\GameModel.cpp",
   "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\model\\GameModel.cpp",
   "output": "CMakeFiles\\potential-fishstick.dir\\model\\GameModel.cpp.obj"
 },
@@ -22,5 +22,575 @@
   "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Users\\nkspa\\Documents\\potential-fishstick /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\PFTest.dir\\model\\GameModel.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\model\\GameModel.cpp",
   "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\model\\GameModel.cpp",
   "output": "CMakeFiles\\PFTest.dir\\model\\GameModel.cpp.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\context.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\context.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\context.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\context.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\init.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\init.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\init.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\init.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\input.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\input.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\input.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\input.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\monitor.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\monitor.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\monitor.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\monitor.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\vulkan.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\vulkan.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\vulkan.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\vulkan.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\window.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\window.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\window.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\window.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\win32_init.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\win32_init.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\win32_init.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\win32_init.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\win32_joystick.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\win32_joystick.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\win32_joystick.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\win32_joystick.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\win32_monitor.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\win32_monitor.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\win32_monitor.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\win32_monitor.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\win32_time.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\win32_time.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\win32_time.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\win32_time.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\win32_thread.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\win32_thread.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\win32_thread.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\win32_thread.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\win32_window.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\win32_window.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\win32_window.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\win32_window.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\wgl_context.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\wgl_context.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\wgl_context.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\wgl_context.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\egl_context.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\egl_context.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\egl_context.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\egl_context.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\build\\lib\\glfw-3.3.8\\src /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /W3 /Folib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\osmesa_context.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\osmesa_context.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\src\\osmesa_context.c",
+  "output": "lib\\glfw-3.3.8\\src\\CMakeFiles\\glfw.dir\\osmesa_context.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\boing.dir\\boing.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\boing.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\boing.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\boing.dir\\boing.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x86\\rc.exe -D_CRT_SECURE_NO_WARNINGS -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -DWIN32 -D_DEBUG /fo lib\\glfw-3.3.8\\examples\\CMakeFiles\\boing.dir\\glfw.rc.res C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\boing.dir\\glfw.rc.res"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\boing.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\boing.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\gears.dir\\gears.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\gears.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\gears.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\gears.dir\\gears.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x86\\rc.exe -D_CRT_SECURE_NO_WARNINGS -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -DWIN32 -D_DEBUG /fo lib\\glfw-3.3.8\\examples\\CMakeFiles\\gears.dir\\glfw.rc.res C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\gears.dir\\glfw.rc.res"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\gears.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\gears.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\heightmap.dir\\heightmap.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\heightmap.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\heightmap.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\heightmap.dir\\heightmap.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x86\\rc.exe -D_CRT_SECURE_NO_WARNINGS -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -DWIN32 -D_DEBUG /fo lib\\glfw-3.3.8\\examples\\CMakeFiles\\heightmap.dir\\glfw.rc.res C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\heightmap.dir\\glfw.rc.res"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\heightmap.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\heightmap.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\offscreen.dir\\offscreen.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\offscreen.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\offscreen.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\offscreen.dir\\offscreen.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x86\\rc.exe -D_CRT_SECURE_NO_WARNINGS -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -DWIN32 -D_DEBUG /fo lib\\glfw-3.3.8\\examples\\CMakeFiles\\offscreen.dir\\glfw.rc.res C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\offscreen.dir\\glfw.rc.res"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\offscreen.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\offscreen.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\particles.dir\\particles.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\particles.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\particles.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\particles.dir\\particles.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x86\\rc.exe -D_CRT_SECURE_NO_WARNINGS -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -DWIN32 -D_DEBUG /fo lib\\glfw-3.3.8\\examples\\CMakeFiles\\particles.dir\\glfw.rc.res C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\particles.dir\\glfw.rc.res"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\particles.dir\\__\\deps\\tinycthread.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\tinycthread.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\tinycthread.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\particles.dir\\__\\deps\\tinycthread.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\particles.dir\\__\\deps\\getopt.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\particles.dir\\__\\deps\\getopt.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\particles.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\particles.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\sharing.dir\\sharing.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\sharing.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\sharing.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\sharing.dir\\sharing.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x86\\rc.exe -D_CRT_SECURE_NO_WARNINGS -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -DWIN32 -D_DEBUG /fo lib\\glfw-3.3.8\\examples\\CMakeFiles\\sharing.dir\\glfw.rc.res C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\sharing.dir\\glfw.rc.res"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\sharing.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\sharing.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\simple.dir\\simple.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\simple.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\simple.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\simple.dir\\simple.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x86\\rc.exe -D_CRT_SECURE_NO_WARNINGS -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -DWIN32 -D_DEBUG /fo lib\\glfw-3.3.8\\examples\\CMakeFiles\\simple.dir\\glfw.rc.res C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\simple.dir\\glfw.rc.res"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\simple.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\simple.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\splitview.dir\\splitview.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\splitview.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\splitview.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\splitview.dir\\splitview.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x86\\rc.exe -D_CRT_SECURE_NO_WARNINGS -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -DWIN32 -D_DEBUG /fo lib\\glfw-3.3.8\\examples\\CMakeFiles\\splitview.dir\\glfw.rc.res C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\splitview.dir\\glfw.rc.res"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\splitview.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\splitview.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\wave.dir\\wave.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\wave.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\wave.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\wave.dir\\wave.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x86\\rc.exe -D_CRT_SECURE_NO_WARNINGS -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -I C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include -DWIN32 -D_DEBUG /fo lib\\glfw-3.3.8\\examples\\CMakeFiles\\wave.dir\\glfw.rc.res C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\examples\\glfw.rc",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\wave.dir\\glfw.rc.res"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\examples\\CMakeFiles\\wave.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\examples\\CMakeFiles\\wave.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\clipboard.dir\\clipboard.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\clipboard.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\clipboard.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\clipboard.dir\\clipboard.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\clipboard.dir\\__\\deps\\getopt.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\clipboard.dir\\__\\deps\\getopt.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\clipboard.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\clipboard.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\events.dir\\events.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\events.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\events.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\events.dir\\events.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\events.dir\\__\\deps\\getopt.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\events.dir\\__\\deps\\getopt.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\events.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\events.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\msaa.dir\\msaa.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\msaa.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\msaa.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\msaa.dir\\msaa.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\msaa.dir\\__\\deps\\getopt.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\msaa.dir\\__\\deps\\getopt.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\msaa.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\msaa.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\glfwinfo.dir\\glfwinfo.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\glfwinfo.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\glfwinfo.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\glfwinfo.dir\\glfwinfo.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\glfwinfo.dir\\__\\deps\\getopt.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\glfwinfo.dir\\__\\deps\\getopt.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\glfwinfo.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\glfwinfo.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\glfwinfo.dir\\__\\deps\\glad_vulkan.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_vulkan.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_vulkan.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\glfwinfo.dir\\__\\deps\\glad_vulkan.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\iconify.dir\\iconify.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\iconify.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\iconify.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\iconify.dir\\iconify.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\iconify.dir\\__\\deps\\getopt.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\iconify.dir\\__\\deps\\getopt.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\iconify.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\iconify.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\monitors.dir\\monitors.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\monitors.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\monitors.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\monitors.dir\\monitors.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\monitors.dir\\__\\deps\\getopt.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\monitors.dir\\__\\deps\\getopt.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\monitors.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\monitors.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\reopen.dir\\reopen.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\reopen.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\reopen.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\reopen.dir\\reopen.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\reopen.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\reopen.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\cursor.dir\\cursor.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\cursor.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\cursor.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\cursor.dir\\cursor.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\cursor.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\cursor.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\empty.dir\\empty.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\empty.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\empty.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\empty.dir\\empty.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\empty.dir\\__\\deps\\tinycthread.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\tinycthread.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\tinycthread.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\empty.dir\\__\\deps\\tinycthread.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\empty.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\empty.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\gamma.dir\\gamma.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\gamma.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\gamma.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\gamma.dir\\gamma.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\gamma.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\gamma.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\icon.dir\\icon.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\icon.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\icon.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\icon.dir\\icon.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\icon.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\icon.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\inputlag.dir\\inputlag.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\inputlag.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\inputlag.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\inputlag.dir\\inputlag.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\inputlag.dir\\__\\deps\\getopt.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\inputlag.dir\\__\\deps\\getopt.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\inputlag.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\inputlag.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\joysticks.dir\\joysticks.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\joysticks.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\joysticks.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\joysticks.dir\\joysticks.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\joysticks.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\joysticks.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\opacity.dir\\opacity.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\opacity.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\opacity.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\opacity.dir\\opacity.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\opacity.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\opacity.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\tearing.dir\\tearing.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\tearing.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\tearing.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\tearing.dir\\tearing.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\tearing.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\tearing.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\threads.dir\\threads.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\threads.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\threads.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\threads.dir\\threads.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\threads.dir\\__\\deps\\tinycthread.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\tinycthread.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\tinycthread.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\threads.dir\\__\\deps\\tinycthread.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\threads.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\threads.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\timeout.dir\\timeout.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\timeout.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\timeout.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\timeout.dir\\timeout.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\timeout.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\timeout.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\title.dir\\title.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\title.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\title.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\title.dir\\title.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\title.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\title.dir\\__\\deps\\glad_gl.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\triangle-vulkan.dir\\triangle-vulkan.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\triangle-vulkan.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\triangle-vulkan.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\triangle-vulkan.dir\\triangle-vulkan.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\triangle-vulkan.dir\\__\\deps\\glad_vulkan.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_vulkan.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_vulkan.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\triangle-vulkan.dir\\__\\deps\\glad_vulkan.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\windows.dir\\windows.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\windows.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\tests\\windows.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\windows.dir\\windows.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\windows.dir\\__\\deps\\getopt.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\getopt.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\windows.dir\\__\\deps\\getopt.c.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps -IC:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\include /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1 /Folib\\glfw-3.3.8\\tests\\CMakeFiles\\windows.dir\\__\\deps\\glad_gl.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\lib\\glfw-3.3.8\\deps\\glad_gl.c",
+  "output": "lib\\glfw-3.3.8\\tests\\CMakeFiles\\windows.dir\\__\\deps\\glad_gl.c.obj"
 }
 ]
