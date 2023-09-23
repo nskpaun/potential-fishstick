@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "potential-fishstick",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,8 +40,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "PFTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PFTest-Debug-1166a17c5c0592790ce1.json",
+					"name" : "PFTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "potential-fishstick::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-potential-fishstick-Debug-86dc70b8256cc9ba2028.json",
+					"jsonFile" : "target-potential-fishstick-Debug-9f1d72bb88e3c1deb2af.json",
 					"name" : "potential-fishstick",
 					"projectIndex" : 0
 				}

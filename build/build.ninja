@@ -85,6 +85,51 @@ build potential-fishstick.exe: CXX_EXECUTABLE_LINKER__potential-fishstick_Debug 
   TARGET_IMPLIB = potential-fishstick.lib
   TARGET_PDB = potential-fishstick.pdb
 
+# =============================================================================
+# Object build statements for EXECUTABLE target PFTest
+
+
+#############################################
+# Order-only phony target for PFTest
+
+build cmake_object_order_depends_target_PFTest: phony || CMakeFiles\PFTest.dir
+
+build CMakeFiles\PFTest.dir\test.cpp.obj: CXX_COMPILER__PFTest_unscanned_Debug C$:\Users\nkspa\Documents\potential-fishstick\test.cpp || cmake_object_order_depends_target_PFTest
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -IC:\Users\nkspa\Documents\potential-fishstick
+  OBJECT_DIR = CMakeFiles\PFTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\PFTest.dir
+  TARGET_COMPILE_PDB = CMakeFiles\PFTest.dir\
+  TARGET_PDB = PFTest.pdb
+
+build CMakeFiles\PFTest.dir\model\GameModel.cpp.obj: CXX_COMPILER__PFTest_unscanned_Debug C$:\Users\nkspa\Documents\potential-fishstick\model\GameModel.cpp || cmake_object_order_depends_target_PFTest
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -IC:\Users\nkspa\Documents\potential-fishstick
+  OBJECT_DIR = CMakeFiles\PFTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\PFTest.dir\model
+  TARGET_COMPILE_PDB = CMakeFiles\PFTest.dir\
+  TARGET_PDB = PFTest.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target PFTest
+
+
+#############################################
+# Link the executable PFTest.exe
+
+build PFTest.exe: CXX_EXECUTABLE_LINKER__PFTest_Debug CMakeFiles\PFTest.dir\test.cpp.obj CMakeFiles\PFTest.dir\model\GameModel.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\PFTest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\PFTest.dir\
+  TARGET_FILE = PFTest.exe
+  TARGET_IMPLIB = PFTest.lib
+  TARGET_PDB = PFTest.pdb
+
 
 #############################################
 # Utility command for edit_cache
@@ -111,6 +156,8 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build PFTest: phony PFTest.exe
+
 build potential-fishstick: phony potential-fishstick.exe
 
 # =============================================================================
@@ -121,7 +168,7 @@ build potential-fishstick: phony potential-fishstick.exe
 #############################################
 # Folder: C:/Users/nkspa/Documents/potential-fishstick/build
 
-build all: phony potential-fishstick.exe
+build all: phony potential-fishstick.exe PFTest.exe
 
 # =============================================================================
 # Unknown Build Time Dependencies.

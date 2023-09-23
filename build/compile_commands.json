@@ -10,5 +10,17 @@
   "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Users\\nkspa\\Documents\\potential-fishstick /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\potential-fishstick.dir\\model\\GameModel.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\model\\GameModel.cpp",
   "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\model\\GameModel.cpp",
   "output": "CMakeFiles\\potential-fishstick.dir\\model\\GameModel.cpp.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Users\\nkspa\\Documents\\potential-fishstick /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\PFTest.dir\\test.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\test.cpp",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\test.cpp",
+  "output": "CMakeFiles\\PFTest.dir\\test.cpp.obj"
+},
+{
+  "directory": "C:/Users/nkspa/Documents/potential-fishstick/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1437~1.328\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IC:\\Users\\nkspa\\Documents\\potential-fishstick /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\PFTest.dir\\model\\GameModel.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\nkspa\\Documents\\potential-fishstick\\model\\GameModel.cpp",
+  "file": "C:\\Users\\nkspa\\Documents\\potential-fishstick\\model\\GameModel.cpp",
+  "output": "CMakeFiles\\PFTest.dir\\model\\GameModel.cpp.obj"
 }
 ]
