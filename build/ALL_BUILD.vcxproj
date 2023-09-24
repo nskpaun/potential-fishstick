@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CF62F7EE-AECB-3BDF-8F5B-E2C84A6D174A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\nkspa\Documents\potential-fishstick\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/nkspa/Documents/potential-fishstick/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/nkspa/Documents/potential-fishstick -BC:/Users/nkspa/Documents/potential-fishstick/build --check-stamp-file C:/Users/nkspa/Documents/potential-fishstick/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindVulkan.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeCCompiler.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeCXXCompiler.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeRCCompiler.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/nkspa/Documents/potential-fishstick/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/nkspa/Documents/potential-fishstick -BC:/Users/nkspa/Documents/potential-fishstick/build --check-stamp-file C:/Users/nkspa/Documents/potential-fishstick/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindVulkan.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeCCompiler.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeCXXCompiler.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeRCCompiler.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/nkspa/Documents/potential-fishstick/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/nkspa/Documents/potential-fishstick -BC:/Users/nkspa/Documents/potential-fishstick/build --check-stamp-file C:/Users/nkspa/Documents/potential-fishstick/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindVulkan.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeCCompiler.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeCXXCompiler.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeRCCompiler.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/nkspa/Documents/potential-fishstick/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/nkspa/Documents/potential-fishstick -BC:/Users/nkspa/Documents/potential-fishstick/build --check-stamp-file C:/Users/nkspa/Documents/potential-fishstick/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\FindVulkan.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeCCompiler.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeCXXCompiler.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeRCCompiler.cmake;C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\3.26.4-msvc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\nkspa\Documents\potential-fishstick\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\ZERO_CHECK.vcxproj">
+      <Project>{2592A377-5C3B-3FEE-913E-FEC2B88D1F14}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\PFTest.vcxproj">
+      <Project>{001FCCF5-A9D5-30D7-B8F8-48D37C0D201B}</Project>
+      <Name>PFTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\examples\boing.vcxproj">
+      <Project>{9D2CD044-6217-337C-9E3C-180AFBA9D942}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\clipboard.vcxproj">
+      <Project>{A95A934B-CE58-33A6-9BB4-1506BE9575A1}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\cursor.vcxproj">
+      <Project>{5DE53B86-9A5E-36F4-9D87-17AFAA26C91F}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\empty.vcxproj">
+      <Project>{EE0104FF-8220-3590-A8BC-F57E81897FCD}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\events.vcxproj">
+      <Project>{55F38084-0349-3378-90A5-2B852E88D0BE}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\gamma.vcxproj">
+      <Project>{85E7DB42-1BDF-3B1D-A545-650A24ABBCFF}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\examples\gears.vcxproj">
+      <Project>{D9849A01-071D-33CB-AD72-A4BC9BB7D23C}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\src\glfw.vcxproj">
+      <Project>{CC838188-DDD8-38AD-A2C7-FC283CBBA8FE}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\glfwinfo.vcxproj">
+      <Project>{1A86776B-FB3A-33B5-872F-FC755D5B9063}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\examples\heightmap.vcxproj">
+      <Project>{7D6F4E54-7630-3959-AB1C-97E13EF0C46A}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\icon.vcxproj">
+      <Project>{B430B1AB-6646-3F94-8757-919CC4C023A5}</Project>
+      <Name>icon</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\iconify.vcxproj">
+      <Project>{D1128198-36BF-37D5-B822-D0EB9B98A28C}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\inputlag.vcxproj">
+      <Project>{C089BF1B-CCC3-31AA-8A89-6383512BFA65}</Project>
+      <Name>inputlag</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\joysticks.vcxproj">
+      <Project>{4EE64E28-9804-3B8C-B357-A16D6DFDE950}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\monitors.vcxproj">
+      <Project>{E866F586-0E4B-34B9-B3A6-D47B27181522}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\msaa.vcxproj">
+      <Project>{53BA05E0-E013-34F4-9DA5-8E01BBF7D3B1}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\examples\offscreen.vcxproj">
+      <Project>{88CB757F-6416-341C-B1B8-82C2820FF92B}</Project>
+      <Name>offscreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\opacity.vcxproj">
+      <Project>{D7F89F18-1CAC-3908-BF7A-6428A1406EF1}</Project>
+      <Name>opacity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\examples\particles.vcxproj">
+      <Project>{D19DDE34-DA76-3142-97C2-E1F1C73358A2}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\potential-fishstick.vcxproj">
+      <Project>{F1A3F98A-39F5-3D7C-8B71-FE4464E44506}</Project>
+      <Name>potential-fishstick</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\reopen.vcxproj">
+      <Project>{F1BD1FE7-16DE-3C30-95DA-397F0F087F7A}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\examples\sharing.vcxproj">
+      <Project>{C06A6739-9C6B-3F15-9996-BFC5FC985DE0}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\examples\simple.vcxproj">
+      <Project>{161FE607-807A-3091-A078-494FA83B03E8}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\examples\splitview.vcxproj">
+      <Project>{2C3224EB-375E-3F9B-9103-1A7EAFDDE802}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\tearing.vcxproj">
+      <Project>{47427C4D-FBC7-34BA-90FA-6D1A1033C82A}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\threads.vcxproj">
+      <Project>{04A6721C-502F-3C6E-9C53-AA358CC82430}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\timeout.vcxproj">
+      <Project>{9666ECB0-A9CB-3D8A-96CA-B6FB8A5743D7}</Project>
+      <Name>timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\title.vcxproj">
+      <Project>{FA3A448F-F44E-3265-9411-AA4D946448F2}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\triangle-vulkan.vcxproj">
+      <Project>{CFF53E2F-6AF6-3439-9F82-7C74DEE5ED48}</Project>
+      <Name>triangle-vulkan</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\examples\wave.vcxproj">
+      <Project>{AD77747C-5704-3988-9BBC-0AED3421134A}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\tests\windows.vcxproj">
+      <Project>{B3F4116F-701B-3398-82C1-F2116A13A430}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

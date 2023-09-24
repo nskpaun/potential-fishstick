@@ -1,7 +1,7 @@
-prefix=C:/Program Files (x86)/potential-fishstick
+prefix=C:/Program Files/potential-fishstick
 exec_prefix=${prefix}
-includedir=C:/Program Files (x86)/potential-fishstick/include
-libdir=C:/Program Files (x86)/potential-fishstick/lib
+includedir=C:/Program Files/potential-fishstick/include
+libdir=C:/Program Files/potential-fishstick/lib
 
 Name: GLFW
 Description: A multi-platform library for OpenGL, window and input

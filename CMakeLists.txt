@@ -5,8 +5,10 @@ project(potential-fishstick)
 set(CMAKE_CXX_STANDARD 11)
 
 find_package( OpenGL REQUIRED )
+find_package( Vulkan REQUIRED )
 
 include_directories( ${OPENGL_INCLUDE_DIRS} )
+include_directories( ${VULKAN_INCLUDE_DIRS} )
 
 set( GLFW_BUILD_DOCS OFF CACHE BOOL  "GLFW lib only" )
 set( GLFW_INSTALL OFF CACHE BOOL  "GLFW lib only" )
@@ -16,7 +18,7 @@ add_subdirectory( lib/glm )
 
 add_executable(potential-fishstick main.cpp model/GameModel.cpp)
 
-target_link_libraries(potential-fishstick ${OPENGL_LIBRARIES} glfw glm)
+target_link_libraries(potential-fishstick ${OPENGL_LIBRARIES} glfw glm Vulkan::Vulkan)
 
 add_executable(PFTest test.cpp model/GameModel.cpp)
 
