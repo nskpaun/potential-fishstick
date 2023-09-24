@@ -1,13 +1,13 @@
 # ninja log v5
-49	558	7172162335063702	CMakeFiles/potential-fishstick.dir/main.cpp.obj	4a6c43d2ebf88a7a
+61	894	7172290005525355	CMakeFiles/potential-fishstick.dir/main.cpp.obj	579d114019275db6
 88	415	7172161357953843	lib/glfw-3.3.8/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.obj	7057a3ed97480e87
 1345	1591	7172161369804563	lib/glfw-3.3.8/tests/CMakeFiles/tearing.dir/tearing.c.obj	74a4d2a282b31c37
 56	460	7172157436117396	PFTest.exe	495141a329bd074
-49	916	7172161363027924	CMakeFiles/potential-fishstick.dir/model/GameModel.cpp.obj	49aeff2ecd7b6443
+77	889	7172290005498997	CMakeFiles/potential-fishstick.dir/model/GameModel.cpp.obj	81261e3970709925
 116	459	7172156540196686	lib/glfw-3.3.8/examples/CMakeFiles/boing.dir/boing.c.obj	fea1326f75f322be
 84	460	7172161358065905	lib/glfw-3.3.8/tests/CMakeFiles/msaa.dir/msaa.c.obj	156bc844fc481553
 77	511	7172156540675494	lib/glfw-3.3.8/src/CMakeFiles/glfw.dir/vulkan.c.obj	e4f122cdd512963d
-1004	1646	7172161369085805	potential-fishstick.exe	ee6fa4ed3ddd885a
+894	1131	7172290007538509	potential-fishstick.exe	c806d09c6e60e900
 232	453	7172157438885033	lib/glfw-3.3.8/examples/CMakeFiles/offscreen.dir/glfw.rc.res	aa73a3bef16771cd
 252	537	7172157439725248	lib/glfw-3.3.8/examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.obj	a16c45b5485f700b
 15	943	7172138174713564	CMakeFiles/PFTest.dir/model/GameModel.cpp.obj	10bb706e59d9417f
@@ -130,5 +130,5 @@
 2263	2968	7172161383410215	lib/glfw-3.3.8/tests/title.exe	dec13a633c4c34c1
 2467	3073	7172161384511662	lib/glfw-3.3.8/tests/windows.exe	44069db6576e3ca0
 2714	3191	7172161385690415	lib/glfw-3.3.8/tests/triangle-vulkan.exe	db4990f4443214c8
-48	553	7172163542722114	CMakeFiles/potential-fishstick.dir/main.cpp.obj	4a6c43d2ebf88a7a
-555	755	7172163544365392	potential-fishstick.exe	c806d09c6e60e900
+52	669	7172305167766529	CMakeFiles/potential-fishstick.dir/main.cpp.obj	579d114019275db6
+672	856	7172305169345607	potential-fishstick.exe	c806d09c6e60e900

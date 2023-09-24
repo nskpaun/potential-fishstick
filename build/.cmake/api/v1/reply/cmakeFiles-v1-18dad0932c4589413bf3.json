@@ -248,6 +248,17 @@
 		},
 		{
 			"path" : "lib/glfw-3.3.8/tests/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/glm/CMakeLists.txt"
+		},
+		{
+			"path" : "lib/glm/glm/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/GNUInstallDirs.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

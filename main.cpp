@@ -1,7 +1,10 @@
+// #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 #include <iostream>
 
 #include "model/GameModel.h"
+#include <glm/vec4.hpp>
+#include <glm/mat4x4.hpp>
 
 int main() {
     std::cout << "Hello PF GAME!" << std::endl;
@@ -14,8 +17,10 @@ int main() {
     if (!glfwInit())
         return -1;
 
+    glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
+
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "GLFW CMake starter", NULL, NULL);
+    window = glfwCreateWindow(800, 600, "Vulkan window", nullptr, nullptr);
     if (!window)
     {
         glfwTerminate();
@@ -23,22 +28,21 @@ int main() {
     }
 
     /* Make the window's context current */
-    glfwMakeContextCurrent(window);
-    glClearColor( 0.4f, 0.3f, 0.4f, 0.0f );
+    // glfwMakeContextCurrent(window);
+    // glClearColor( 0.4f, 0.3f, 0.4f, 0.0f );
+
+    glm::mat4 matrix;
+    glm::vec4 vec;
+    auto test = matrix * vec;
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
-        /* Render here */
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        /* Swap front and back buffers */
-        glfwSwapBuffers(window);
-
         /* Poll for and process events */
         glfwPollEvents();
     }
 
+    glfwDestroyWindow(window);
     glfwTerminate();
 
     return 0;

@@ -12,10 +12,11 @@ set( GLFW_BUILD_DOCS OFF CACHE BOOL  "GLFW lib only" )
 set( GLFW_INSTALL OFF CACHE BOOL  "GLFW lib only" )
 
 add_subdirectory( lib/glfw-3.3.8 )
+add_subdirectory( lib/glm )
 
 add_executable(potential-fishstick main.cpp model/GameModel.cpp)
 
-target_link_libraries(potential-fishstick ${OPENGL_LIBRARIES} glfw )
+target_link_libraries(potential-fishstick ${OPENGL_LIBRARIES} glfw glm)
 
 add_executable(PFTest test.cpp model/GameModel.cpp)
 

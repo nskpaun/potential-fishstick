@@ -57,3 +57,13 @@ C:/Users/nkspa/Documents/potential-fishstick/build/lib/glfw-3.3.8/tests/CMakeFil
 C:/Users/nkspa/Documents/potential-fishstick/build/lib/glfw-3.3.8/tests/CMakeFiles/list_install_components.dir
 C:/Users/nkspa/Documents/potential-fishstick/build/lib/glfw-3.3.8/tests/CMakeFiles/install.dir
 C:/Users/nkspa/Documents/potential-fishstick/build/lib/glfw-3.3.8/tests/CMakeFiles/install/local.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/CMakeFiles/edit_cache.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/CMakeFiles/rebuild_cache.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/CMakeFiles/list_install_components.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/CMakeFiles/install.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/CMakeFiles/install/local.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/glm/CMakeFiles/edit_cache.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/glm/CMakeFiles/rebuild_cache.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/glm/CMakeFiles/list_install_components.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/glm/CMakeFiles/install.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/glm/CMakeFiles/install/local.dir
