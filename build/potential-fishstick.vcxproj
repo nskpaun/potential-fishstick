@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw-3.3.8\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.3.261.1/Include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -105,10 +105,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw-3.3.8\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw-3.3.8\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -116,7 +116,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;lib\glfw-3.3.8\src\Debug\glfw3.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;app\Debug\App.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;lib\glfw\src\Debug\glfw3.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;app\Debug\App.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -131,7 +131,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw-3.3.8\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.3.261.1/Include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -150,10 +150,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw-3.3.8\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw-3.3.8\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -161,7 +161,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;lib\glfw-3.3.8\src\Release\glfw3.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;app\Release\App.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;lib\glfw\src\Release\glfw3.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;app\Release\App.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -176,7 +176,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw-3.3.8\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.3.261.1/Include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -195,10 +195,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw-3.3.8\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw-3.3.8\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -206,7 +206,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;lib\glfw-3.3.8\src\MinSizeRel\glfw3.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;app\MinSizeRel\App.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;lib\glfw\src\MinSizeRel\glfw3.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;app\MinSizeRel\App.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -221,7 +221,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw-3.3.8\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.3.261.1/Include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -239,10 +239,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw-3.3.8\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw-3.3.8\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nkspa\Documents\potential-fishstick;C:\Users\nkspa\Documents\potential-fishstick\lib\glfw\include;C:\Users\nkspa\Documents\potential-fishstick\app\.;C:\Users\nkspa\Documents\potential-fishstick\app\glm;C:\VulkanSDK\1.3.261.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -250,7 +250,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;lib\glfw-3.3.8\src\RelWithDebInfo\glfw3.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;app\RelWithDebInfo\App.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;lib\glfw\src\RelWithDebInfo\glfw3.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;app\RelWithDebInfo\App.lib;C:\VulkanSDK\1.3.261.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -334,7 +334,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{D5150188-64B9-34EE-8048-E8A2AEEDAEF0}</Project>
       <Name>App</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw-3.3.8\src\glfw.vcxproj">
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\lib\glfw\src\glfw.vcxproj">
       <Project>{CC838188-DDD8-38AD-A2C7-FC283CBBA8FE}</Project>
       <Name>glfw</Name>
     </ProjectReference>

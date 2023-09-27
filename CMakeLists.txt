@@ -13,7 +13,7 @@ include_directories( ${VULKAN_INCLUDE_DIRS} )
 set( GLFW_BUILD_DOCS OFF CACHE BOOL  "GLFW lib only" )
 set( GLFW_INSTALL OFF CACHE BOOL  "GLFW lib only" )
 
-add_subdirectory( lib/glfw-3.3.8 )
+add_subdirectory( lib/glfw )
 add_subdirectory( app )
 
 add_executable(potential-fishstick main.cpp)

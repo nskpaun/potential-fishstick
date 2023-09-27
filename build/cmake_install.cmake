@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/nkspa/Documents/potential-fishstick/build/lib/glfw-3.3.8/cmake_install.cmake")
+  include("C:/Users/nkspa/Documents/potential-fishstick/build/lib/glfw/cmake_install.cmake")
   include("C:/Users/nkspa/Documents/potential-fishstick/build/app/cmake_install.cmake")
 
 endif()
