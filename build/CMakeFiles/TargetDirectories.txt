@@ -43,3 +43,5 @@ C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/CMakeFiles/uninstall.
 C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/CMakeFiles/INSTALL.dir
 C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/CMakeFiles/ALL_BUILD.dir
 C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/glm/CMakeFiles/INSTALL.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/app/CMakeFiles/App.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/app/CMakeFiles/INSTALL.dir

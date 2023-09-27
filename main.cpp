@@ -8,7 +8,8 @@
 
 #include <iostream>
 
-#include "model/GameModel.h"
+#include "app/GameModel.h"
+#include "app/PFApplication.h"
 
 int main() {
     std::cout << "Hello PF GAME!" << std::endl;
@@ -35,10 +36,6 @@ int main() {
         glfwTerminate();
         return -1;
     }
-
-    /* Make the window's context current */
-    // glfwMakeContextCurrent(window);
-    // glClearColor( 0.4f, 0.3f, 0.4f, 0.0f );
 
     glm::mat4 matrix;
     glm::vec4 vec;

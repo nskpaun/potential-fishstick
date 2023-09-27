@@ -173,6 +173,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\app\App.vcxproj">
+      <Project>{D5150188-64B9-34EE-8048-E8A2AEEDAEF0}</Project>
+      <Name>App</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\nkspa\Documents\potential-fishstick\build\PFTest.vcxproj">
       <Project>{001FCCF5-A9D5-30D7-B8F8-48D37C0D201B}</Project>
       <Name>PFTest</Name>
