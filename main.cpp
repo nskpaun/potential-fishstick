@@ -9,14 +9,13 @@
 
 #include "app/PFApplication.h"
 #include "app/PFWindowManager.h"
+
 class MainWindowManager : public PFWindowManager {
 public:
     int getExtensions() override {
         return 0;
     }
 };
-
-
 
 int main() {
     GLFWwindow* window;
