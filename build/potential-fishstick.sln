@@ -241,7 +241,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "triangle-vulkan", "lib\glfw
 		{CC838188-DDD8-38AD-A2C7-FC283CBBA8FE} = {CC838188-DDD8-38AD-A2C7-FC283CBBA8FE}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uninstall", "lib\glm\uninstall.vcxproj", "{199D01D4-4C45-317A-B687-122090A984F7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uninstall", "app\glm\uninstall.vcxproj", "{199D01D4-4C45-317A-B687-122090A984F7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2592A377-5C3B-3FEE-913E-FEC2B88D1F14} = {2592A377-5C3B-3FEE-913E-FEC2B88D1F14}
 	EndProjectSection

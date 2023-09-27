@@ -39,9 +39,9 @@ C:/Users/nkspa/Documents/potential-fishstick/build/lib/glfw-3.3.8/tests/CMakeFil
 C:/Users/nkspa/Documents/potential-fishstick/build/lib/glfw-3.3.8/tests/CMakeFiles/triangle-vulkan.dir
 C:/Users/nkspa/Documents/potential-fishstick/build/lib/glfw-3.3.8/tests/CMakeFiles/windows.dir
 C:/Users/nkspa/Documents/potential-fishstick/build/lib/glfw-3.3.8/tests/CMakeFiles/INSTALL.dir
-C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/CMakeFiles/uninstall.dir
-C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/CMakeFiles/INSTALL.dir
-C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/CMakeFiles/ALL_BUILD.dir
-C:/Users/nkspa/Documents/potential-fishstick/build/lib/glm/glm/CMakeFiles/INSTALL.dir
 C:/Users/nkspa/Documents/potential-fishstick/build/app/CMakeFiles/App.dir
 C:/Users/nkspa/Documents/potential-fishstick/build/app/CMakeFiles/INSTALL.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/app/glm/CMakeFiles/uninstall.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/app/glm/CMakeFiles/INSTALL.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/app/glm/CMakeFiles/ALL_BUILD.dir
+C:/Users/nkspa/Documents/potential-fishstick/build/app/glm/glm/CMakeFiles/INSTALL.dir
