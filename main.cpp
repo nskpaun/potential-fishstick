@@ -12,32 +12,38 @@
 #include "app/PFApplication.h"
 #include "app/PFWindowManager.h"
 
-class MainWindowManager : public PFWindowManager {
+class MainWindowManager : public PFWindowManager
+{
 public:
-    GLFWwindow* window;
-    MainWindowManager(GLFWwindow* w) : window(w) {}
-    const char** getExtensions(uint32_t *extensionCount) override {
-        const char** glfwExtensions;
+    GLFWwindow *window;
+    MainWindowManager(GLFWwindow *w) : window(w) {}
+    const char **getExtensions(uint32_t *extensionCount) override
+    {
+        const char **glfwExtensions;
         glfwExtensions = glfwGetRequiredInstanceExtensions(extensionCount);
         return glfwExtensions;
     }
 
-    bool windowShouldClose() override {
+    bool windowShouldClose() override
+    {
         return glfwWindowShouldClose(window);
     }
 
-    void pollEvents() override {
+    void pollEvents() override
+    {
         glfwPollEvents();
     }
 
-    void destroy() override {
+    void destroy() override
+    {
         glfwDestroyWindow(window);
         glfwTerminate();
     }
 };
 
-int main() {
-    GLFWwindow* window;
+int main()
+{
+    GLFWwindow *window;
 
     /* Initialize the library */
     if (!glfwInit())
@@ -47,7 +53,7 @@ int main() {
     glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 
     window = glfwCreateWindow(PF_APP_WINDOW_WIDTH, PF_APP_WINDOW_WIDTH, "Vulkan window", nullptr, nullptr);
-    MainWindowManager* windowManager = new MainWindowManager(window);
+    MainWindowManager *windowManager = new MainWindowManager(window);
 
     if (!window)
     {
@@ -57,9 +63,12 @@ int main() {
 
     PFApplication app;
 
-    try {
+    try
+    {
         app.run(windowManager);
-    } catch (const std::exception& e) {
+    }
+    catch (const std::exception &e)
+    {
         std::cerr << e.what() << std::endl;
         return EXIT_FAILURE;
     }

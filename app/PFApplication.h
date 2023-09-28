@@ -3,23 +3,38 @@
 
 #include <cstdlib>
 #include <cstdint>
+#include <vector>
 
 #include <vulkan/vulkan.h>
 
 #include "PFWindowManager.h"
 
+// DEBUG MODE IS ENABLED!!! Uncomment the following line to disable
+// #define NDEBUG
+
 const uint32_t PF_APP_WINDOW_WIDTH = 800;
 const uint32_t PF_APP_WINDOW_HEIGHT = 600;
 
-class PFApplication {
-    public:
-        void run(PFWindowManager *windowManager);
+const std::vector<const char *> validationLayers = {
+    "VK_LAYER_KHRONOS_validation"};
 
-    private:
-        VkInstance instance;
-        void initVulkan(PFWindowManager *windowManager);
-        void mainLoop(PFWindowManager *windowManager);
-        void cleanup(PFWindowManager *windowManager);
+#ifdef NDEBUG
+const bool enableValidationLayers = false;
+#else
+const bool enableValidationLayers = true;
+#endif
+
+class PFApplication
+{
+public:
+    void run(PFWindowManager *windowManager);
+
+private:
+    VkInstance instance;
+    void initVulkan(PFWindowManager *windowManager);
+    void createInstance(PFWindowManager *windowManager);
+    void mainLoop(PFWindowManager *windowManager);
+    void cleanup(PFWindowManager *windowManager);
 };
 
 #endif

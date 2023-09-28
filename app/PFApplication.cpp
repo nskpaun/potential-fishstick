@@ -7,13 +7,60 @@
 #include <glm/vec4.hpp>
 #include <glm/mat4x4.hpp>
 
-void PFApplication::run(PFWindowManager *windowManager) {
+void PFApplication::run(PFWindowManager *windowManager)
+{
     initVulkan(windowManager);
     mainLoop(windowManager);
     cleanup(windowManager);
 }
 
-void PFApplication::initVulkan(PFWindowManager *windowManager) {
+void PFApplication::initVulkan(PFWindowManager *windowManager)
+{
+    createInstance(windowManager);
+}
+
+bool checkValidationLayerSupport()
+{
+    uint32_t layerCount;
+    vkEnumerateInstanceLayerProperties(&layerCount, nullptr);
+
+    std::vector<VkLayerProperties> availableLayers(layerCount);
+    vkEnumerateInstanceLayerProperties(&layerCount, availableLayers.data());
+
+    for (const char *layerName : validationLayers)
+    {
+        bool layerFound = false;
+
+        for (const auto &layerProperties : availableLayers)
+        {
+            if (strcmp(layerName, layerProperties.layerName) == 0)
+            {
+                layerFound = true;
+                break;
+            }
+        }
+
+        if (!layerFound)
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+void PFApplication::createInstance(PFWindowManager *windowManager)
+{
+    if (enableValidationLayers)
+    {
+        std::cout << "checking validation layers" << std::endl;
+    }
+
+    if (enableValidationLayers && !checkValidationLayerSupport())
+    {
+        throw std::runtime_error("validation layers requested, but not available!");
+    }
+
     VkApplicationInfo appInfo{};
     appInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
     appInfo.pApplicationName = "Potential Fishstick";
@@ -27,15 +74,27 @@ void PFApplication::initVulkan(PFWindowManager *windowManager) {
     createInfo.pApplicationInfo = &appInfo;
 
     uint32_t extensionCount = 0;
-    const char ** extensions;
+    const char **extensions;
     extensions = windowManager->getExtensions(&extensionCount);
 
     createInfo.enabledExtensionCount = extensionCount;
     createInfo.ppEnabledExtensionNames = extensions;
 
+    if (enableValidationLayers)
+    {
+        createInfo.enabledLayerCount =
+            static_cast<uint32_t>(validationLayers.size());
+        createInfo.ppEnabledLayerNames = validationLayers.data();
+    }
+    else
+    {
+        createInfo.enabledLayerCount = 0;
+    }
+
     createInfo.enabledLayerCount = 0;
 
-    if(vkCreateInstance(&createInfo, nullptr, &instance) != VK_SUCCESS) {
+    if (vkCreateInstance(&createInfo, nullptr, &instance) != VK_SUCCESS)
+    {
         throw std::runtime_error("failed to create vulkan instance");
     }
 
@@ -43,12 +102,12 @@ void PFApplication::initVulkan(PFWindowManager *windowManager) {
     std::cout << extensionCount << " extensions supported\n";
 }
 
-void PFApplication::mainLoop(PFWindowManager *windowManager) {
+void PFApplication::mainLoop(PFWindowManager *windowManager)
+{
     std::cout << "Main Loop" << std::endl;
     glm::mat4 matrix;
     glm::vec4 vec;
     auto test = matrix * vec;
-
 
     /* Loop until the user closes the window */
     while (!windowManager->windowShouldClose())
@@ -58,9 +117,9 @@ void PFApplication::mainLoop(PFWindowManager *windowManager) {
     }
 }
 
-void PFApplication::cleanup(PFWindowManager *windowManager) {
+void PFApplication::cleanup(PFWindowManager *windowManager)
+{
     std::cout << "cleanup" << std::endl;
     vkDestroyInstance(instance, nullptr);
     windowManager->destroy();
 }
-
