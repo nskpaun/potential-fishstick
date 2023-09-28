@@ -4,6 +4,8 @@
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
 
+#include <cstdlib>
+#include <cstdint>
 #include <stdexcept>
 #include <iostream>
 
@@ -12,8 +14,25 @@
 
 class MainWindowManager : public PFWindowManager {
 public:
-    int getExtensions() override {
-        return 0;
+    GLFWwindow* window;
+    MainWindowManager(GLFWwindow* w) : window(w) {}
+    const char** getExtensions(uint32_t *extensionCount) override {
+        const char** glfwExtensions;
+        glfwExtensions = glfwGetRequiredInstanceExtensions(extensionCount);
+        return glfwExtensions;
+    }
+
+    bool windowShouldClose() override {
+        return glfwWindowShouldClose(window);
+    }
+
+    void pollEvents() override {
+        glfwPollEvents();
+    }
+
+    void destroy() override {
+        glfwDestroyWindow(window);
+        glfwTerminate();
     }
 };
 
@@ -28,6 +47,7 @@ int main() {
     glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 
     window = glfwCreateWindow(PF_APP_WINDOW_WIDTH, PF_APP_WINDOW_WIDTH, "Vulkan window", nullptr, nullptr);
+    MainWindowManager* windowManager = new MainWindowManager(window);
 
     if (!window)
     {
@@ -38,22 +58,11 @@ int main() {
     PFApplication app;
 
     try {
-        app.run();
+        app.run(windowManager);
     } catch (const std::exception& e) {
         std::cerr << e.what() << std::endl;
         return EXIT_FAILURE;
     }
-
-
-    /* Loop until the user closes the window */
-    while (!glfwWindowShouldClose(window))
-    {
-        /* Poll for and process events */
-        glfwPollEvents();
-    }
-
-    glfwDestroyWindow(window);
-    glfwTerminate();
 
     return EXIT_SUCCESS;
 }
