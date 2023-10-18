@@ -31,10 +31,12 @@ public:
 
 private:
     VkInstance instance;
+    VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
     void initVulkan(PFWindowManager *windowManager);
     void createInstance(PFWindowManager *windowManager);
     void mainLoop(PFWindowManager *windowManager);
     void cleanup(PFWindowManager *windowManager);
+    void pickPhysicalDevice();
 };
 
 #endif

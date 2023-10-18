@@ -17,6 +17,45 @@ void PFApplication::run(PFWindowManager *windowManager)
 void PFApplication::initVulkan(PFWindowManager *windowManager)
 {
     createInstance(windowManager);
+    pickPhysicalDevice();
+}
+
+bool isDeviceSuitable(const VkPhysicalDevice &device)
+{
+    VkPhysicalDeviceProperties deviceProperties;
+    vkGetPhysicalDeviceProperties(device, &deviceProperties);
+
+    VkPhysicalDeviceFeatures deviceFeatures;
+    vkGetPhysicalDeviceFeatures(device, &deviceFeatures);
+
+    return deviceProperties.deviceType == VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU && deviceFeatures.geometryShader;
+}
+
+void PFApplication::pickPhysicalDevice()
+{
+    uint32_t deviceCount = 0;
+    vkEnumeratePhysicalDevices(instance, &deviceCount, nullptr);
+    if (deviceCount == 0)
+    {
+        throw new std::runtime_error("Couldn't find phsyical devices with vulkan support!");
+    }
+
+    std::vector<VkPhysicalDevice> devices(deviceCount);
+    vkEnumeratePhysicalDevices(instance, &deviceCount, devices.data());
+
+    for (const auto &device : devices)
+    {
+        if (isDeviceSuitable(device))
+        {
+            physicalDevice = device;
+            break;
+        }
+    }
+
+    if (physicalDevice == VK_NULL_HANDLE)
+    {
+        throw new std::runtime_error("Couldn't find a suitable GPU");
+    }
 }
 
 bool checkValidationLayerSupport()
