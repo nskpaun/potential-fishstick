@@ -23,6 +23,7 @@ void PFApplication::run(PFWindowManager *windowManager)
 void PFApplication::initVulkan(PFWindowManager *windowManager)
 {
     createInstance(windowManager);
+    createSurface(windowManager);
     pickPhysicalDevice();
     createLogicalDevice();
 }
@@ -104,6 +105,11 @@ void PFApplication::createLogicalDevice()
     }
 
     vkGetDeviceQueue(device, indices.graphicsFamily.value(), 0, &graphicsQueue);
+}
+
+void PFApplication::createSurface(PFWindowManager *windowManager)
+{
+    windowManager->createSurface(instance, &surface);
 }
 
 void PFApplication::pickPhysicalDevice()
@@ -234,6 +240,7 @@ void PFApplication::mainLoop(PFWindowManager *windowManager)
 void PFApplication::cleanup(PFWindowManager *windowManager)
 {
     std::cout << "cleanup" << std::endl;
+    vkDestroySurfaceKHR(instance, surface, nullptr);
     vkDestroyInstance(instance, nullptr);
     vkDestroyDevice(device, nullptr);
     windowManager->destroy();

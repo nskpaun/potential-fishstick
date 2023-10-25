@@ -33,13 +33,16 @@ private:
     VkInstance instance;
     VkDevice device;
     VkQueue graphicsQueue;
+    VkSurfaceKHR surface;
     VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
+
     void initVulkan(PFWindowManager *windowManager);
     void createInstance(PFWindowManager *windowManager);
     void mainLoop(PFWindowManager *windowManager);
     void cleanup(PFWindowManager *windowManager);
     void pickPhysicalDevice();
     void createLogicalDevice();
+    void createSurface(PFWindowManager *windowManager);
 };
 
 #endif

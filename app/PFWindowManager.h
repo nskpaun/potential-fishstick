@@ -11,6 +11,7 @@ public:
     virtual bool windowShouldClose() = 0;
     virtual void pollEvents() = 0;
     virtual void destroy() = 0;
+    virtual void createSurface(VkInstance instance, VkSurfaceKHR *surface) = 0;
 };
 
 #endif
