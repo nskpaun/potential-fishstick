@@ -6,6 +6,12 @@
 
 #include <glm/vec4.hpp>
 #include <glm/mat4x4.hpp>
+#include <optional>
+
+struct QueueFamilyIndices
+{
+    std::optional<uint32_t> graphicsFamily;
+};
 
 void PFApplication::run(PFWindowManager *windowManager)
 {
@@ -20,6 +26,31 @@ void PFApplication::initVulkan(PFWindowManager *windowManager)
     pickPhysicalDevice();
 }
 
+QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device)
+{
+    QueueFamilyIndices indices;
+    uint32_t queueFamilyCount = 0;
+    vkGetPhysicalDeviceQueueFamilyProperties(device, &queueFamilyCount,
+                                             nullptr);
+
+    std::vector<VkQueueFamilyProperties> queueFamilies(queueFamilyCount);
+    vkGetPhysicalDeviceQueueFamilyProperties(device, &queueFamilyCount,
+                                             queueFamilies.data());
+
+    uint32_t i = 0;
+    for (auto family : queueFamilies)
+    {
+        if (family.queueCount & VK_QUEUE_GRAPHICS_BIT)
+        {
+            indices.graphicsFamily = i;
+            break;
+        }
+        i++;
+    }
+
+    return indices;
+}
+
 bool isDeviceSuitable(const VkPhysicalDevice &device)
 {
     VkPhysicalDeviceProperties deviceProperties;
@@ -28,7 +59,9 @@ bool isDeviceSuitable(const VkPhysicalDevice &device)
     VkPhysicalDeviceFeatures deviceFeatures;
     vkGetPhysicalDeviceFeatures(device, &deviceFeatures);
 
-    return deviceProperties.deviceType == VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU && deviceFeatures.geometryShader;
+    auto indices = findQueueFamilies(device);
+
+    return deviceProperties.deviceType == VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU && deviceFeatures.geometryShader && indices.graphicsFamily.has_value();
 }
 
 void PFApplication::pickPhysicalDevice()
