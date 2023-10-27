@@ -60,6 +60,29 @@ QueueFamilyIndices PFApplication::findQueueFamilies(const VkPhysicalDevice &devi
     return indices;
 }
 
+bool checkDeviceExtensionsSupport(const VkPhysicalDevice &device)
+{
+    uint32_t extensionCount;
+    vkEnumerateDeviceExtensionProperties(device, nullptr,
+                                         &extensionCount, nullptr);
+
+    std::vector<VkExtensionProperties>
+        availableExtensions(extensionCount);
+    vkEnumerateDeviceExtensionProperties(device, nullptr,
+                                         &extensionCount, availableExtensions.data());
+
+    std::set<std::string>
+        requiredExtensions(deviceExtensions.begin(),
+                           deviceExtensions.end());
+
+    for (const auto &extension : availableExtensions)
+    {
+        requiredExtensions.erase(extension.extensionName);
+    }
+
+    return requiredExtensions.empty();
+}
+
 bool PFApplication::isDeviceSuitable(const VkPhysicalDevice &device)
 {
     VkPhysicalDeviceProperties deviceProperties;
@@ -70,7 +93,9 @@ bool PFApplication::isDeviceSuitable(const VkPhysicalDevice &device)
 
     auto indices = findQueueFamilies(device);
 
-    return deviceProperties.deviceType == VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU && deviceFeatures.geometryShader && indices.graphicsFamily.has_value();
+    bool extensionsSupported = checkDeviceExtensionsSupport(device);
+
+    return deviceProperties.deviceType == VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU && deviceFeatures.geometryShader && indices.isComplete() && extensionsSupported;
 }
 
 void PFApplication::createLogicalDevice()
@@ -102,7 +127,8 @@ void PFApplication::createLogicalDevice()
     createInfo.queueCreateInfoCount = 1;
     createInfo.pEnabledFeatures = &deviceFeatures;
 
-    createInfo.enabledExtensionCount = 0;
+    createInfo.enabledExtensionCount = static_cast<uint32_t>(deviceExtensions.size());
+    createInfo.ppEnabledExtensionNames = deviceExtensions.data();
 
     if (enableValidationLayers)
     {
