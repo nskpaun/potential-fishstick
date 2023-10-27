@@ -3,15 +3,10 @@
 #include <vulkan/vulkan.h>
 
 #include <iostream>
+#include <set>
 
 #include <glm/vec4.hpp>
 #include <glm/mat4x4.hpp>
-#include <optional>
-
-struct QueueFamilyIndices
-{
-    std::optional<uint32_t> graphicsFamily;
-};
 
 void PFApplication::run(PFWindowManager *windowManager)
 {
@@ -28,7 +23,7 @@ void PFApplication::initVulkan(PFWindowManager *windowManager)
     createLogicalDevice();
 }
 
-QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device)
+QueueFamilyIndices PFApplication::findQueueFamilies(const VkPhysicalDevice &device)
 {
     QueueFamilyIndices indices;
     uint32_t queueFamilyCount = 0;
@@ -45,6 +40,18 @@ QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device)
         if (family.queueCount & VK_QUEUE_GRAPHICS_BIT)
         {
             indices.graphicsFamily = i;
+        }
+
+        VkBool32 presentSupport = false;
+        vkGetPhysicalDeviceSurfaceSupportKHR(device, i, surface, &presentSupport);
+
+        if (presentSupport)
+        {
+            indices.presentFamily = i;
+        }
+
+        if (indices.isComplete())
+        {
             break;
         }
         i++;
@@ -53,7 +60,7 @@ QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device)
     return indices;
 }
 
-bool isDeviceSuitable(const VkPhysicalDevice &device)
+bool PFApplication::isDeviceSuitable(const VkPhysicalDevice &device)
 {
     VkPhysicalDeviceProperties deviceProperties;
     vkGetPhysicalDeviceProperties(device, &deviceProperties);
@@ -70,19 +77,28 @@ void PFApplication::createLogicalDevice()
 {
     QueueFamilyIndices indices = findQueueFamilies(physicalDevice);
 
-    VkDeviceQueueCreateInfo queueCreateInfo{};
-    queueCreateInfo.sType = VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO;
-    queueCreateInfo.queueFamilyIndex = indices.graphicsFamily.value();
-    queueCreateInfo.queueCount = 1;
+    std::vector<VkDeviceQueueCreateInfo> queueCreateInfos;
+    std::set<uint32_t> uniqueQueueFamilies =
+        {indices.graphicsFamily.value(), indices.presentFamily.value()};
 
     float queuePriority = 1.0f;
-    queueCreateInfo.pQueuePriorities = &queuePriority;
+    for (uint32_t queueFamily : uniqueQueueFamilies)
+    {
+        VkDeviceQueueCreateInfo queueCreateInfo{};
+        queueCreateInfo.sType =
+            VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO;
+        queueCreateInfo.queueFamilyIndex = queueFamily;
+        queueCreateInfo.queueCount = 1;
+        queueCreateInfo.pQueuePriorities = &queuePriority;
+        queueCreateInfos.push_back(queueCreateInfo);
+    }
 
     VkPhysicalDeviceFeatures deviceFeatures{};
 
     VkDeviceCreateInfo createInfo{};
     createInfo.sType = VK_STRUCTURE_TYPE_DEVICE_CREATE_INFO;
-    createInfo.pQueueCreateInfos = &queueCreateInfo;
+    createInfo.queueCreateInfoCount = static_cast<uint32_t>(queueCreateInfos.size());
+    createInfo.pQueueCreateInfos = queueCreateInfos.data();
     createInfo.queueCreateInfoCount = 1;
     createInfo.pEnabledFeatures = &deviceFeatures;
 
@@ -105,6 +121,7 @@ void PFApplication::createLogicalDevice()
     }
 
     vkGetDeviceQueue(device, indices.graphicsFamily.value(), 0, &graphicsQueue);
+    vkGetDeviceQueue(device, indices.presentFamily.value(), 0, &presentQueue);
 }
 
 void PFApplication::createSurface(PFWindowManager *windowManager)

@@ -3,6 +3,7 @@
 
 #include <cstdlib>
 #include <cstdint>
+#include <optional>
 #include <vector>
 
 #include <vulkan/vulkan.h>
@@ -24,6 +25,17 @@ const bool enableValidationLayers = false;
 const bool enableValidationLayers = true;
 #endif
 
+struct QueueFamilyIndices
+{
+    std::optional<uint32_t> graphicsFamily;
+    std::optional<uint32_t> presentFamily;
+
+    bool isComplete()
+    {
+        return graphicsFamily.has_value() && presentFamily.has_value();
+    }
+};
+
 class PFApplication
 {
 public:
@@ -33,6 +45,7 @@ private:
     VkInstance instance;
     VkDevice device;
     VkQueue graphicsQueue;
+    VkQueue presentQueue;
     VkSurfaceKHR surface;
     VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
 
@@ -43,6 +56,8 @@ private:
     void pickPhysicalDevice();
     void createLogicalDevice();
     void createSurface(PFWindowManager *windowManager);
+    bool isDeviceSuitable(const VkPhysicalDevice &device);
+    QueueFamilyIndices findQueueFamilies(const VkPhysicalDevice &device);
 };
 
 #endif

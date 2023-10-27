@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0)
 
 project(potential-fishstick)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 find_package( OpenGL REQUIRED )
 find_package( Vulkan REQUIRED )
