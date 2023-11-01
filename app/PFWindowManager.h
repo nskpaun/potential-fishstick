@@ -12,6 +12,7 @@ public:
     virtual void pollEvents() = 0;
     virtual void destroy() = 0;
     virtual void createSurface(VkInstance instance, VkSurfaceKHR *surface) = 0;
+    virtual VkExtent2D chooseSwapExtent(const VkSurfaceCapabilitiesKHR &capabilities) = 0;
 };
 
 #endif

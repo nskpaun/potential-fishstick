@@ -58,6 +58,7 @@ private:
     VkQueue presentQueue;
     VkSurfaceKHR surface;
     VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
+    VkSwapchainKHR swapchain;
 
     void initVulkan(PFWindowManager *windowManager);
     void createInstance(PFWindowManager *windowManager);
@@ -65,6 +66,7 @@ private:
     void cleanup(PFWindowManager *windowManager);
     void pickPhysicalDevice();
     void createLogicalDevice();
+    void createSwapChain(PFWindowManager *windowManager);
     void createSurface(PFWindowManager *windowManager);
     bool isDeviceSuitable(const VkPhysicalDevice &device);
     QueueFamilyIndices findQueueFamilies(const VkPhysicalDevice &device);
