@@ -18,10 +18,15 @@ void PFApplication::run(PFWindowManager *windowManager)
 void PFApplication::initVulkan(PFWindowManager *windowManager)
 {
     createInstance(windowManager);
+    std::cout << "Instance created" << std::endl;
     createSurface(windowManager);
+    std::cout << "Surface created" << std::endl;
     pickPhysicalDevice();
+    std::cout << "Device Picked" << std::endl;
     createLogicalDevice();
+    std::cout << "Logical Device Created" << std::endl;
     createSwapChain(windowManager);
+    std::cout << "end init vulkan" << std::endl;
 }
 
 VkSurfaceFormatKHR chooseSurfaceFormat(const std::vector<VkSurfaceFormatKHR> &availableFormats)
@@ -110,24 +115,24 @@ SwapChainSupportDetails PFApplication::querySwapChainSupportDetails(const VkPhys
 {
     SwapChainSupportDetails details;
 
-    vkGetPhysicalDeviceSurfaceCapabilitiesKHR(physicalDevice, surface, &details.capabilities);
+    vkGetPhysicalDeviceSurfaceCapabilitiesKHR(device, surface, &details.capabilities);
 
     uint32_t formatCount = 0;
-    vkGetPhysicalDeviceSurfaceFormatsKHR(physicalDevice, surface, &formatCount, nullptr);
+    vkGetPhysicalDeviceSurfaceFormatsKHR(device, surface, &formatCount, nullptr);
 
     if (formatCount > 0)
     {
         details.formats.resize(formatCount);
-        vkGetPhysicalDeviceSurfaceFormatsKHR(physicalDevice, surface, &formatCount, details.formats.data());
+        vkGetPhysicalDeviceSurfaceFormatsKHR(device, surface, &formatCount, details.formats.data());
     }
 
     uint32_t presentCount = 0;
-    vkGetPhysicalDeviceSurfacePresentModesKHR(physicalDevice, surface, &presentCount, nullptr);
+    vkGetPhysicalDeviceSurfacePresentModesKHR(device, surface, &presentCount, nullptr);
 
     if (presentCount > 0)
     {
         details.presentModes.resize(presentCount);
-        vkGetPhysicalDeviceSurfacePresentModesKHR(physicalDevice, surface, &presentCount, details.presentModes.data());
+        vkGetPhysicalDeviceSurfacePresentModesKHR(device, surface, &presentCount, details.presentModes.data());
     }
 
     return details;
