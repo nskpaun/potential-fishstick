@@ -23,6 +23,33 @@ void PFApplication::initVulkan(PFWindowManager *windowManager)
     createLogicalDevice();
 }
 
+SwapChainSupportDetails PFApplication::querySwapChainSupportDetails(const VkPhysicalDevice &device)
+{
+    SwapChainSupportDetails details;
+
+    vkGetPhysicalDeviceSurfaceCapabilitiesKHR(physicalDevice, surface, &details.capabilities);
+
+    uint32_t formatCount = 0;
+    vkGetPhysicalDeviceSurfaceFormatsKHR(physicalDevice, surface, &formatCount, nullptr);
+
+    if (formatCount > 0)
+    {
+        details.formats.resize(formatCount);
+        vkGetPhysicalDeviceSurfaceFormatsKHR(physicalDevice, surface, &formatCount, details.formats.data());
+    }
+
+    uint32_t presentCount = 0;
+    vkGetPhysicalDeviceSurfacePresentModesKHR(physicalDevice, surface, &presentCount, nullptr);
+
+    if (presentCount > 0)
+    {
+        details.presentModes.resize(presentCount);
+        vkGetPhysicalDeviceSurfacePresentModesKHR(physicalDevice, surface, &presentCount, details.presentModes.data());
+    }
+
+    return details;
+}
+
 QueueFamilyIndices PFApplication::findQueueFamilies(const VkPhysicalDevice &device)
 {
     QueueFamilyIndices indices;
@@ -95,7 +122,16 @@ bool PFApplication::isDeviceSuitable(const VkPhysicalDevice &device)
 
     bool extensionsSupported = checkDeviceExtensionsSupport(device);
 
-    return deviceProperties.deviceType == VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU && deviceFeatures.geometryShader && indices.isComplete() && extensionsSupported;
+    bool swapChainAdequate = false;
+    if (extensionsSupported)
+    {
+        SwapChainSupportDetails swapChainSupport =
+            querySwapChainSupportDetails(device);
+        swapChainAdequate = !swapChainSupport.formats.empty() &&
+                            !swapChainSupport.presentModes.empty();
+    }
+
+    return deviceProperties.deviceType == VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU && deviceFeatures.geometryShader && indices.isComplete() && swapChainAdequate;
 }
 
 void PFApplication::createLogicalDevice()

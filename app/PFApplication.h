@@ -39,6 +39,13 @@ struct QueueFamilyIndices
     }
 };
 
+struct SwapChainSupportDetails
+{
+    VkSurfaceCapabilitiesKHR capabilities;
+    std::vector<VkSurfaceFormatKHR> formats;
+    std::vector<VkPresentModeKHR> presentModes;
+};
+
 class PFApplication
 {
 public:
@@ -61,6 +68,7 @@ private:
     void createSurface(PFWindowManager *windowManager);
     bool isDeviceSuitable(const VkPhysicalDevice &device);
     QueueFamilyIndices findQueueFamilies(const VkPhysicalDevice &device);
+    SwapChainSupportDetails querySwapChainSupportDetails(const VkPhysicalDevice &device);
 };
 
 #endif
