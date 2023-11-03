@@ -109,6 +109,14 @@ void PFApplication::createSwapChain(PFWindowManager *windowManager)
     {
         throw std::runtime_error("Failed to create swapchain");
     }
+
+    uint32_t imageCount;
+    vkGetSwapchainImagesKHR(device, swapchain, &imageCount, nullptr);
+    swapchainImages.resize(imageCount);
+    vkGetSwapchainImagesKHR(device, swapchain, &imageCount, swapchainImages.data());
+
+    swapchainFormat = surfaceFormat.format;
+    swapchainExtent = extent;
 }
 
 SwapChainSupportDetails PFApplication::querySwapChainSupportDetails(const VkPhysicalDevice &device)

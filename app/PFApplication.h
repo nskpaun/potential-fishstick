@@ -59,6 +59,9 @@ private:
     VkSurfaceKHR surface;
     VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
     VkSwapchainKHR swapchain;
+    std::vector<VkImage> swapchainImages;
+    VkFormat swapchainFormat;
+    VkExtent2D swapchainExtent;
 
     void initVulkan(PFWindowManager *windowManager);
     void createInstance(PFWindowManager *windowManager);
