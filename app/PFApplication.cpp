@@ -57,6 +57,37 @@ VkPresentModeKHR choosePresentMode(const std::vector<VkPresentModeKHR> &availabl
     return VK_PRESENT_MODE_FIFO_KHR;
 }
 
+void PFApplication::createImageViews()
+{
+    swapchainImageViews.resize(swapchainImages.size());
+
+    for (size_t i = 0; i < swapchainImages.size(); i++)
+    {
+        VkImageViewCreateInfo createInfo{};
+        createInfo.sType = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO;
+        createInfo.image = swapchainImages[i];
+
+        createInfo.viewType = VK_IMAGE_VIEW_TYPE_2D;
+        createInfo.format = swapchainFormat;
+        createInfo.components.r = VK_COMPONENT_SWIZZLE_IDENTITY;
+        createInfo.components.g = VK_COMPONENT_SWIZZLE_IDENTITY;
+        createInfo.components.b = VK_COMPONENT_SWIZZLE_IDENTITY;
+        createInfo.components.a = VK_COMPONENT_SWIZZLE_IDENTITY;
+
+        createInfo.subresourceRange.aspectMask = VK_IMAGE_ASPECT_COLOR_BIT;
+        createInfo.subresourceRange.baseMipLevel = 0;
+        createInfo.subresourceRange.levelCount = 1;
+        createInfo.subresourceRange.baseArrayLayer = 0;
+        createInfo.subresourceRange.layerCount = 1;
+
+        if (
+            vkCreateImageView(device, &createInfo, nullptr, &swapchainImageViews[i]) != VK_SUCCESS)
+        {
+            throw std::runtime_error("Failed to create swapchain image view");
+        }
+    }
+}
+
 void PFApplication::createSwapChain(PFWindowManager *windowManager)
 {
     SwapChainSupportDetails details = querySwapChainSupportDetails(physicalDevice);
@@ -110,7 +141,7 @@ void PFApplication::createSwapChain(PFWindowManager *windowManager)
         throw std::runtime_error("Failed to create swapchain");
     }
 
-    uint32_t imageCount;
+
     vkGetSwapchainImagesKHR(device, swapchain, &imageCount, nullptr);
     swapchainImages.resize(imageCount);
     vkGetSwapchainImagesKHR(device, swapchain, &imageCount, swapchainImages.data());
@@ -415,6 +446,10 @@ void PFApplication::mainLoop(PFWindowManager *windowManager)
 void PFApplication::cleanup(PFWindowManager *windowManager)
 {
     std::cout << "cleanup" << std::endl;
+    for (auto imageview : swapchainImageViews)
+    {
+        vkDestroyImageView(device, imageview, nullptr);
+    }
     vkDestroySurfaceKHR(instance, surface, nullptr);
     vkDestroyInstance(instance, nullptr);
     vkDestroyDevice(device, nullptr);

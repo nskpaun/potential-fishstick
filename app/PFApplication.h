@@ -60,6 +60,7 @@ private:
     VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
     VkSwapchainKHR swapchain;
     std::vector<VkImage> swapchainImages;
+    std::vector<VkImageView> swapchainImageViews;
     VkFormat swapchainFormat;
     VkExtent2D swapchainExtent;
 
@@ -71,6 +72,7 @@ private:
     void createLogicalDevice();
     void createSwapChain(PFWindowManager *windowManager);
     void createSurface(PFWindowManager *windowManager);
+    void createImageViews();
     bool isDeviceSuitable(const VkPhysicalDevice &device);
     QueueFamilyIndices findQueueFamilies(const VkPhysicalDevice &device);
     SwapChainSupportDetails querySwapChainSupportDetails(const VkPhysicalDevice &device);
