@@ -8,6 +8,8 @@
 #include <glm/vec4.hpp>
 #include <glm/mat4x4.hpp>
 
+#include "PFHelpers.h"
+
 void PFApplication::run(PFWindowManager *windowManager)
 {
     initVulkan(windowManager);
@@ -26,6 +28,10 @@ void PFApplication::initVulkan(PFWindowManager *windowManager)
     createLogicalDevice();
     std::cout << "Logical Device Created" << std::endl;
     createSwapChain(windowManager);
+    std::cout << "Swapchain Created" << std::endl;
+    createImageViews();
+    std::cout << "Imageviews Created" << std::endl;
+    createGraphicsPipeline();
     std::cout << "end init vulkan" << std::endl;
 }
 
@@ -55,6 +61,51 @@ VkPresentModeKHR choosePresentMode(const std::vector<VkPresentModeKHR> &availabl
     }
 
     return VK_PRESENT_MODE_FIFO_KHR;
+}
+
+VkShaderModule PFApplication::createShaderModule(const std::vector<char> &code)
+{
+    VkShaderModuleCreateInfo createInfo{};
+    createInfo.sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO;
+    createInfo.codeSize = code.size();
+    createInfo.pCode = reinterpret_cast<const uint32_t *>(code.data());
+
+    VkShaderModule shaderModule;
+    if (vkCreateShaderModule(device, &createInfo, nullptr, &shaderModule) != VK_SUCCESS)
+    {
+        throw new std::runtime_error("failed to create shader module");
+    }
+
+    return shaderModule;
+}
+
+void PFApplication::createGraphicsPipeline()
+{
+    //Assumes the compiled shaders are in the directory above the current working directory
+    auto vertShaderCode = pfReadFile("../vert.spv");
+    auto fragShaderCode = pfReadFile("../frag.spv");
+
+    auto vertShaderModule = createShaderModule(vertShaderCode);
+    auto fragShaderModule = createShaderModule(fragShaderCode);
+
+    VkPipelineShaderStageCreateInfo vertShaderStageInfo{};
+    vertShaderStageInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
+    vertShaderStageInfo.stage = VK_SHADER_STAGE_VERTEX_BIT;
+    vertShaderStageInfo.module = vertShaderModule;
+    vertShaderStageInfo.pName = "main";
+
+    VkPipelineShaderStageCreateInfo fragShaderStageInfo{};
+    fragShaderStageInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;
+    fragShaderStageInfo.stage = VK_SHADER_STAGE_FRAGMENT_BIT;
+    fragShaderStageInfo.module = fragShaderModule;
+    fragShaderStageInfo.pName = "main";
+
+    VkPipelineShaderStageCreateInfo shaderStages[] = {
+        vertShaderStageInfo,
+        fragShaderStageInfo};
+
+    vkDestroyShaderModule(device, vertShaderModule, nullptr);
+    vkDestroyShaderModule(device, fragShaderModule, nullptr);
 }
 
 void PFApplication::createImageViews()
@@ -140,7 +191,6 @@ void PFApplication::createSwapChain(PFWindowManager *windowManager)
     {
         throw std::runtime_error("Failed to create swapchain");
     }
-
 
     vkGetSwapchainImagesKHR(device, swapchain, &imageCount, nullptr);
     swapchainImages.resize(imageCount);

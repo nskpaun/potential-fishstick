@@ -1,6 +1,10 @@
 # CMake Build Directory
 build/
 
+
+# Shader builds
+app/shader/*.spv
+
 # Prerequisites
 *.d
 

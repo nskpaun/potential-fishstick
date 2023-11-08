@@ -72,10 +72,12 @@ private:
     void createLogicalDevice();
     void createSwapChain(PFWindowManager *windowManager);
     void createSurface(PFWindowManager *windowManager);
+    void createGraphicsPipeline();
     void createImageViews();
     bool isDeviceSuitable(const VkPhysicalDevice &device);
     QueueFamilyIndices findQueueFamilies(const VkPhysicalDevice &device);
     SwapChainSupportDetails querySwapChainSupportDetails(const VkPhysicalDevice &device);
+    VkShaderModule createShaderModule(const std::vector<char> &code);
 };
 
 #endif
