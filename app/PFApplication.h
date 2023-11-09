@@ -64,6 +64,7 @@ private:
     VkFormat swapchainFormat;
     VkExtent2D swapchainExtent;
     VkPipelineLayout pipelineLayout;
+    VkRenderPass renderPass;
 
     void initVulkan(PFWindowManager *windowManager);
     void createInstance(PFWindowManager *windowManager);
@@ -73,6 +74,7 @@ private:
     void createLogicalDevice();
     void createSwapChain(PFWindowManager *windowManager);
     void createSurface(PFWindowManager *windowManager);
+    void createRenderPass();
     void createGraphicsPipeline();
     void createImageViews();
     bool isDeviceSuitable(const VkPhysicalDevice &device);

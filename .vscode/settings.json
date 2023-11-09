@@ -70,6 +70,7 @@
         "random": "cpp",
         "sstream": "cpp",
         "xhash": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "fstream": "cpp"
     }
 }
