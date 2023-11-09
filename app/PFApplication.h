@@ -63,6 +63,7 @@ private:
     std::vector<VkImageView> swapchainImageViews;
     VkFormat swapchainFormat;
     VkExtent2D swapchainExtent;
+    VkPipelineLayout pipelineLayout;
 
     void initVulkan(PFWindowManager *windowManager);
     void createInstance(PFWindowManager *windowManager);

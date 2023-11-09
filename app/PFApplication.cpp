@@ -190,6 +190,22 @@ void PFApplication::createGraphicsPipeline()
     colorBlending.blendConstants[2] = 0.0f; // Optional
     colorBlending.blendConstants[3] = 0.0f; // Optional
 
+    VkPipelineLayoutCreateInfo pipelineLayoutInfo{};
+    pipelineLayoutInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO;
+    pipelineLayoutInfo.setLayoutCount = 0;            // Optional
+    pipelineLayoutInfo.pSetLayouts = nullptr;         // Optional
+    pipelineLayoutInfo.pushConstantRangeCount = 0;    // Optional
+    pipelineLayoutInfo.pPushConstantRanges = nullptr; // Optional
+
+    if (vkCreatePipelineLayout(
+            device,
+            &pipelineLayoutInfo,
+            nullptr,
+            &pipelineLayout) != VK_SUCCESS)
+    {
+        throw std::runtime_error("failed to create pipeline layout!");
+    }
+
     vkDestroyShaderModule(device, vertShaderModule, nullptr);
     vkDestroyShaderModule(device, fragShaderModule, nullptr);
 }
@@ -586,6 +602,7 @@ void PFApplication::cleanup(PFWindowManager *windowManager)
     {
         vkDestroyImageView(device, imageview, nullptr);
     }
+    vkDestroyPipelineLayout(device, pipelineLayout, nullptr);
     vkDestroySurfaceKHR(instance, surface, nullptr);
     vkDestroyInstance(instance, nullptr);
     vkDestroyDevice(device, nullptr);
