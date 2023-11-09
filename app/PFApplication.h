@@ -65,6 +65,7 @@ private:
     VkExtent2D swapchainExtent;
     VkPipelineLayout pipelineLayout;
     VkRenderPass renderPass;
+    VkPipeline graphicsPipeline;
 
     void initVulkan(PFWindowManager *windowManager);
     void createInstance(PFWindowManager *windowManager);
