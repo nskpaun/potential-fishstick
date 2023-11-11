@@ -67,6 +67,8 @@ private:
     VkRenderPass renderPass;
     VkPipeline graphicsPipeline;
     std::vector<VkFramebuffer> swapChainFramebuffers;
+    VkCommandPool commandPool;
+    VkCommandBuffer mCommandBuffer;
 
     void initVulkan(PFWindowManager *windowManager);
     void createInstance(PFWindowManager *windowManager);
@@ -80,6 +82,9 @@ private:
     void createGraphicsPipeline();
     void createImageViews();
     void createFrameBuffer();
+    void createCommandPool();
+    void createCommandBuffer();
+    void recordCommandBuffer(VkCommandBuffer commandBuffer, uint32_t imageIndex);
     bool isDeviceSuitable(const VkPhysicalDevice &device);
     QueueFamilyIndices findQueueFamilies(const VkPhysicalDevice &device);
     SwapChainSupportDetails querySwapChainSupportDetails(const VkPhysicalDevice &device);
