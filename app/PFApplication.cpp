@@ -923,6 +923,8 @@ void PFApplication::mainLoop(PFWindowManager *windowManager)
         windowManager->pollEvents();
         drawFrame();
     }
+
+    vkDeviceWaitIdle(device);
 }
 
 void PFApplication::cleanup(PFWindowManager *windowManager)
@@ -946,11 +948,10 @@ void PFApplication::cleanup(PFWindowManager *windowManager)
     {
         vkDestroyImageView(device, imageview, nullptr);
     }
-    vkDestroyPipelineLayout(device, pipelineLayout, nullptr);
     vkDestroyRenderPass(device, renderPass, nullptr);
-    vkDestroySurfaceKHR(instance, surface, nullptr);
-    vkDestroyInstance(instance, nullptr);
-    vkDestroyDevice(device, nullptr);
     vkDestroySwapchainKHR(device, swapchain, nullptr);
+    vkDestroySurfaceKHR(instance, surface, nullptr);
+    vkDestroyDevice(device, nullptr);
+    vkDestroyInstance(instance, nullptr);
     windowManager->destroy();
 }
