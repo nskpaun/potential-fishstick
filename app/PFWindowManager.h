@@ -7,7 +7,7 @@
 class PFWindowManager
 {
 public:
-    virtual const char **getExtensions(uint32_t *extensionCount) = 0;
+    virtual const std::vector<const char*>getExtensions(uint32_t *extensionCount) = 0;
     virtual bool windowShouldClose() = 0;
     virtual void pollEvents() = 0;
     virtual void destroy() = 0;

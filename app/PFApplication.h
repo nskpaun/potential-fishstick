@@ -3,6 +3,7 @@
 
 #include <cstdlib>
 #include <cstdint>
+#include <iostream>
 #include <optional>
 #include <vector>
 
@@ -46,6 +47,18 @@ struct SwapChainSupportDetails
     std::vector<VkPresentModeKHR> presentModes;
 };
 
+static VKAPI_ATTR VkBool32 VKAPI_CALL debugCallback(
+    VkDebugUtilsMessageSeverityFlagBitsEXT messageSeverity,
+    VkDebugUtilsMessageTypeFlagsEXT messageType,
+    const VkDebugUtilsMessengerCallbackDataEXT *pCallbackData,
+    void *pUserData)
+{
+
+    std::cerr << "validation layer: " << pCallbackData->pMessage << std::endl;
+
+    return VK_FALSE;
+}
+
 class PFApplication
 {
 public:
@@ -72,6 +85,7 @@ private:
     VkSemaphore imageAvailableSemaphore;
     VkSemaphore renderFinishedSemaphore;
     VkFence inFlightFence;
+    VkDebugUtilsMessengerEXT debugMessenger;
 
     void initVulkan(PFWindowManager *windowManager);
     void createInstance(PFWindowManager *windowManager);
@@ -88,6 +102,7 @@ private:
     void createCommandPool();
     void createCommandBuffer();
     void createSyncObjects();
+    void setupDebugMessenger();
     void drawFrame();
     void recordCommandBuffer(VkCommandBuffer commandBuffer, uint32_t imageIndex);
     bool isDeviceSuitable(const VkPhysicalDevice &device);

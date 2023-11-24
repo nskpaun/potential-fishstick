@@ -21,6 +21,8 @@ void PFApplication::initVulkan(PFWindowManager *windowManager)
 {
     createInstance(windowManager);
     std::cout << "Instance created" << std::endl;
+    setupDebugMessenger();
+    std::cout << "Debug messenger created?" << std::endl;
     createSurface(windowManager);
     std::cout << "Surface created" << std::endl;
     pickPhysicalDevice();
@@ -61,6 +63,15 @@ void PFApplication::createSyncObjects()
     {
         throw std::runtime_error("Failed to create sync objects");
     }
+}
+
+void populateDebugMessengerCreateInfo(VkDebugUtilsMessengerCreateInfoEXT &createInfo)
+{
+    createInfo = {};
+    createInfo.sType = VK_STRUCTURE_TYPE_DEBUG_UTILS_MESSENGER_CREATE_INFO_EXT;
+    createInfo.messageSeverity = VK_DEBUG_UTILS_MESSAGE_SEVERITY_VERBOSE_BIT_EXT | VK_DEBUG_UTILS_MESSAGE_SEVERITY_WARNING_BIT_EXT | VK_DEBUG_UTILS_MESSAGE_SEVERITY_ERROR_BIT_EXT;
+    createInfo.messageType = VK_DEBUG_UTILS_MESSAGE_TYPE_GENERAL_BIT_EXT | VK_DEBUG_UTILS_MESSAGE_TYPE_VALIDATION_BIT_EXT | VK_DEBUG_UTILS_MESSAGE_TYPE_PERFORMANCE_BIT_EXT;
+    createInfo.pfnUserCallback = debugCallback;
 }
 
 VkSurfaceFormatKHR chooseSurfaceFormat(const std::vector<VkSurfaceFormatKHR> &availableFormats)
@@ -738,6 +749,44 @@ bool checkValidationLayerSupport()
     return true;
 }
 
+VkResult CreateDebugUtilsMessengerEXT(VkInstance instance, const VkDebugUtilsMessengerCreateInfoEXT *pCreateInfo, const VkAllocationCallbacks *pAllocator, VkDebugUtilsMessengerEXT *pDebugMessenger)
+{
+    auto func = (PFN_vkCreateDebugUtilsMessengerEXT)vkGetInstanceProcAddr(instance, "vkCreateDebugUtilsMessengerEXT");
+    if (func != nullptr)
+    {
+        return func(instance, pCreateInfo, pAllocator, pDebugMessenger);
+    }
+    else
+    {
+        return VK_ERROR_EXTENSION_NOT_PRESENT;
+    }
+}
+
+void DestroyDebugUtilsMessengerEXT(VkInstance instance, VkDebugUtilsMessengerEXT debugMessenger, const VkAllocationCallbacks *pAllocator)
+{
+    auto func = (PFN_vkDestroyDebugUtilsMessengerEXT)vkGetInstanceProcAddr(instance, "vkDestroyDebugUtilsMessengerEXT");
+    if (func != nullptr)
+    {
+        func(instance, debugMessenger, pAllocator);
+    }
+}
+
+void PFApplication::setupDebugMessenger()
+{
+    if (!enableValidationLayers)
+        return;
+
+    VkDebugUtilsMessengerCreateInfoEXT createInfo;
+    populateDebugMessengerCreateInfo(createInfo);
+
+    auto err = CreateDebugUtilsMessengerEXT(instance, &createInfo, nullptr, &debugMessenger);
+
+    if(err != VK_SUCCESS)
+    {
+        throw std::runtime_error("failed to set up debug messenger!");
+    }
+}
+
 void PFApplication::createInstance(PFWindowManager *windowManager)
 {
     if (enableValidationLayers)
@@ -763,11 +812,11 @@ void PFApplication::createInstance(PFWindowManager *windowManager)
     createInfo.pApplicationInfo = &appInfo;
 
     uint32_t extensionCount = 0;
-    const char **extensions;
-    extensions = windowManager->getExtensions(&extensionCount);
+    auto extensions = windowManager->getExtensions(&extensionCount);
 
+    extensionCount = extensions.size();
     createInfo.enabledExtensionCount = extensionCount;
-    createInfo.ppEnabledExtensionNames = extensions;
+    createInfo.ppEnabledExtensionNames = extensions.data();
 
     if (enableValidationLayers)
     {
@@ -781,6 +830,22 @@ void PFApplication::createInstance(PFWindowManager *windowManager)
     }
 
     createInfo.enabledLayerCount = 0;
+
+    VkDebugUtilsMessengerCreateInfoEXT debugCreateInfo{};
+    if (enableValidationLayers)
+    {
+        createInfo.enabledLayerCount = static_cast<uint32_t>(validationLayers.size());
+        createInfo.ppEnabledLayerNames = validationLayers.data();
+
+        populateDebugMessengerCreateInfo(debugCreateInfo);
+        createInfo.pNext = (VkDebugUtilsMessengerCreateInfoEXT *)&debugCreateInfo;
+    }
+    else
+    {
+        createInfo.enabledLayerCount = 0;
+
+        createInfo.pNext = nullptr;
+    }
 
     if (vkCreateInstance(&createInfo, nullptr, &instance) != VK_SUCCESS)
     {
@@ -857,6 +922,10 @@ void PFApplication::mainLoop(PFWindowManager *windowManager)
 void PFApplication::cleanup(PFWindowManager *windowManager)
 {
     std::cout << "cleanup" << std::endl;
+    if (enableValidationLayers)
+    {
+        DestroyDebugUtilsMessengerEXT(instance, debugMessenger, nullptr);
+    }
     vkDestroyFence(device, inFlightFence, nullptr);
     vkDestroySemaphore(device, imageAvailableSemaphore, nullptr);
     vkDestroySemaphore(device, renderFinishedSemaphore, nullptr);

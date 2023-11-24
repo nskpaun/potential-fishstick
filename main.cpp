@@ -23,11 +23,19 @@ class MainWindowManager : public PFWindowManager
 public:
     GLFWwindow *window;
     MainWindowManager(GLFWwindow *w) : window(w) {}
-    const char **getExtensions(uint32_t *extensionCount) override
+    const std::vector<const char*>getExtensions(uint32_t *extensionCount) override
     {
         const char **glfwExtensions;
         glfwExtensions = glfwGetRequiredInstanceExtensions(extensionCount);
-        return glfwExtensions;
+
+        std::vector<const char *> extensions(glfwExtensions, glfwExtensions + *extensionCount);
+
+        if (enableValidationLayers)
+        {
+            extensions.push_back(VK_EXT_DEBUG_UTILS_EXTENSION_NAME);
+        }
+
+        return extensions;
     }
 
     bool windowShouldClose() override
