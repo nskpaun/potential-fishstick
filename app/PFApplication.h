@@ -86,6 +86,8 @@ private:
     std::vector<VkSemaphore> imageAvailableSemaphores;
     std::vector<VkSemaphore> renderFinishedSemaphores;
     std::vector<VkFence> inFlightFences;
+    VkBuffer vertexBuffer;
+    VkDeviceMemory vertexBufferMemory;
     VkDebugUtilsMessengerEXT debugMessenger;
 
     uint32_t currentFrame = 0;
@@ -103,10 +105,12 @@ private:
     void createImageViews();
     void createFrameBuffer();
     void createCommandPool();
+    void createVertexBuffer();
     void createCommandBuffer();
     void createSyncObjects();
     void setupDebugMessenger();
     void drawFrame();
+    uint32_t findMemoryType(uint32_t typeFilter, VkMemoryPropertyFlags properties);
     void recordCommandBuffer(VkCommandBuffer commandBuffer, uint32_t imageIndex);
     bool isDeviceSuitable(const VkPhysicalDevice &device);
     QueueFamilyIndices findQueueFamilies(const VkPhysicalDevice &device);

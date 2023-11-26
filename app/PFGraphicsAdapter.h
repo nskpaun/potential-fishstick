@@ -43,16 +43,4 @@ const std::vector<Vertex> vertices = {
     {{0.5f, 0.5f}, {0.0f, 1.0f, 0.0f}},
     {{-0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}}};
 
-static void bindVertexInputInfo(VkPipelineVertexInputStateCreateInfo *vertexInputInfo)
-{
-    auto bindingDescription = Vertex::getBindingDescription();
-    auto attributeDescriptions = Vertex::getAttributeDescriptions();
-
-    vertexInputInfo->vertexBindingDescriptionCount = 1;
-    vertexInputInfo->vertexAttributeDescriptionCount =
-        static_cast<uint32_t>(attributeDescriptions.size());
-    vertexInputInfo->pVertexBindingDescriptions = &bindingDescription;
-    vertexInputInfo->pVertexAttributeDescriptions = attributeDescriptions.data();
-}
-
 #endif PFGRAPHICSADAPTER_H
