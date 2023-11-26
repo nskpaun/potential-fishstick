@@ -1,14 +1,13 @@
 #include "PFApplication.h"
 
 #include <vulkan/vulkan.h>
-
 #include <iostream>
 #include <set>
-
 #include <glm/vec4.hpp>
 #include <glm/mat4x4.hpp>
 
 #include "PFHelpers.h"
+#include "PFGraphicsAdapter.h"
 
 void PFApplication::run(PFWindowManager *windowManager)
 {
@@ -308,10 +307,7 @@ void PFApplication::createGraphicsPipeline()
 
     VkPipelineVertexInputStateCreateInfo vertexInputInfo{};
     vertexInputInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO;
-    vertexInputInfo.vertexBindingDescriptionCount = 0;
-    vertexInputInfo.pVertexBindingDescriptions = nullptr; // Optional
-    vertexInputInfo.vertexAttributeDescriptionCount = 0;
-    vertexInputInfo.pVertexAttributeDescriptions = nullptr; // Optional
+    bindVertexInputInfo(&vertexInputInfo);
 
     VkPipelineInputAssemblyStateCreateInfo inputAssembly{};
     inputAssembly.sType = VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO;
