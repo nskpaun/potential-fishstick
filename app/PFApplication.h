@@ -77,17 +77,27 @@ private:
     std::vector<VkImageView> swapchainImageViews;
     VkFormat swapchainFormat;
     VkExtent2D swapchainExtent;
+    VkDescriptorSetLayout descriptorSetLayout;
+    VkDescriptorPool descriptorPool;
     VkPipelineLayout pipelineLayout;
     VkRenderPass renderPass;
     VkPipeline graphicsPipeline;
+
     std::vector<VkFramebuffer> swapChainFramebuffers;
     VkCommandPool commandPool;
     std::vector<VkCommandBuffer> mCommandBuffers;
     std::vector<VkSemaphore> imageAvailableSemaphores;
     std::vector<VkSemaphore> renderFinishedSemaphores;
     std::vector<VkFence> inFlightFences;
+    std::vector<VkBuffer> uniformBuffers;
+    std::vector<VkDeviceMemory> uniformBuffersMemory;
+    std::vector<void *> uniformBuffersMapped;
+    std::vector<VkDescriptorSet> descriptorSets;
+
     VkBuffer vertexBuffer;
     VkDeviceMemory vertexBufferMemory;
+    VkBuffer indexBuffer;
+    VkDeviceMemory indexBufferMemory;
     VkDebugUtilsMessengerEXT debugMessenger;
 
     uint32_t currentFrame = 0;
@@ -105,11 +115,17 @@ private:
     void createImageViews();
     void createFrameBuffer();
     void createCommandPool();
+    void createDescriptorPool();
     void createVertexBuffer();
+    void createIndexBuffer();
+    void createUniformBuffers();
     void createCommandBuffer();
     void createSyncObjects();
     void setupDebugMessenger();
     void drawFrame();
+    void updateUniformBuffer(uint32_t currentImage);
+    void createDescriptorSetLayout();
+    void createDescriptorSets();
     void createBuffer(
         VkDeviceSize size,
         VkBufferUsageFlags usage,
